@@ -1,5 +1,6 @@
 ---
 import { title, description, keywords } from '../metadata'
+import '../styles/global.css'
 ---
 
 <html lang="en">
@@ -12,180 +13,57 @@ import { title, description, keywords } from '../metadata'
 		<meta name="keywords" content={keywords} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<style>
-			@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap");
-
-			:root {
-				--bg: #fbf4e8;
-				--bg2: #fdf8f1;
-				--text: rgba(17, 24, 39, 0.92);
-				--muted: rgba(17, 24, 39, 0.7);
-				--line: rgba(17, 24, 39, 0.12);
-				--pink: #f6c6e8;
-				--blue: #bfe6ff;
-			}
-
-			* {
-				box-sizing: border-box;
-			}
-
-			body {
-				margin: 0;
-				font-family: "Work Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
-					Arial, "Apple Color Emoji", "Segoe UI Emoji";
-				color: var(--text);
-				min-height: 100dvh;
-				display: flex;
-				align-items: center;
-				background:
-					radial-gradient(900px 520px at 10% 0%, rgba(246, 198, 232, 0.35), transparent 60%),
-					radial-gradient(900px 520px at 90% 0%, rgba(191, 230, 255, 0.4), transparent 60%),
-					linear-gradient(180deg, var(--bg2), var(--bg));
-				background-repeat: no-repeat;
-				background-size: 100% 100%;
-			}
-
-			a {
-				color: inherit;
-				text-decoration: none;
-			}
-
-			.container {
-				max-width: 720px;
-				margin: 0 auto;
-				padding: 28px 20px 72px;
-				width: 100%;
-			}
-
-			header {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 12px;
-				padding: 8px 0 36px;
-			}
-
-			.brand {
-				display: flex;
-				align-items: center;
-				gap: 10px;
-				font-weight: 700;
-			}
-
-			.logo {
-				width: 28px;
-				height: 28px;
-				border-radius: 10px;
-				background: linear-gradient(135deg, var(--pink), var(--blue));
-				border: 1px solid rgba(17, 24, 39, 0.14);
-			}
-
-			.badge {
-				display: inline-flex;
-				align-items: center;
-				gap: 8px;
-				padding: 6px 10px;
-				border-radius: 999px;
-				border: 1px solid var(--line);
-				color: var(--muted);
-				font-size: 12px;
-			}
-
-			.stack {
-				display: grid;
-				gap: 14px;
-			}
-
-			.hero {
-				display: grid;
-				gap: 12px;
-				margin-bottom: 6px;
-			}
-
-			h1 {
-				margin: 0;
-				font-family: "Fraunces", "Times New Roman", serif;
-				font-size: clamp(2.8rem, 5vw, 4.2rem);
-				letter-spacing: -0.02em;
-				line-height: 1.04;
-			}
-
-			.highlight {
-				background: linear-gradient(120deg, rgba(246, 198, 232, 0.9), rgba(191, 230, 255, 0.9));
-				padding: 0 10px 2px;
-				border-radius: 999px;
-				box-decoration-break: clone;
-			}
-
-			.description {
-				margin: 0;
-				font-size: 1.05rem;
-				line-height: 1.6;
-				color: var(--muted);
-				max-width: 560px;
-			}
-
-			.actions {
-				display: flex;
-				gap: 10px;
-				flex-wrap: wrap;
-			}
-
-			.btn {
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				padding: 12px 14px;
-				border-radius: 14px;
-				border: 1px solid rgba(17, 24, 39, 0.14);
-				background: rgba(255, 255, 255, 0.8);
-				font-weight: 650;
-			}
-
-			.btn.primary {
-				background: linear-gradient(135deg, rgba(246, 198, 232, 0.95), rgba(191, 230, 255, 0.95));
-			}
-
-			.meta {
-				color: var(--muted);
-				font-size: 13px;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap"
+		/>
 	</head>
-	<body>
-		<div class="container">
-			<header>
-				<div class="brand">
-					<div class="logo" aria-hidden="true"></div>
+	<body
+		class="m-0 min-h-[100dvh] font-['Work_Sans'] text-[rgba(17,24,39,0.92)] flex items-center bg-[radial-gradient(900px_520px_at_10%_0%,rgba(246,198,232,0.35),transparent_60%),radial-gradient(900px_520px_at_90%_0%,rgba(191,230,255,0.4),transparent_60%),linear-gradient(180deg,#fdf8f1,#fbf4e8)] bg-no-repeat bg-[length:100%_100%]"
+	>
+		<div class="mx-auto w-full max-w-[720px] px-5 pt-7 pb-[72px]">
+			<header class="flex flex-wrap items-center justify-between gap-3 pt-2 pb-9">
+				<div class="flex items-center gap-2.5 font-bold">
+					<div
+						class="h-7 w-7 rounded-[10px] border border-[rgba(17,24,39,0.14)] bg-gradient-to-br from-[#f6c6e8] to-[#bfe6ff]"
+						aria-hidden="true"
+					></div>
 					<div>Joba Tea</div>
 				</div>
-				<div class="badge">No auto apply. No outreach.</div>
+				<div
+					class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[rgba(17,24,39,0.12)] px-2.5 py-1.5 text-xs text-[rgba(17,24,39,0.7)] sm:w-auto"
+				>
+					No auto apply. No outreach.
+				</div>
 			</header>
 
-			<main class="stack">
-				<div class="hero">
-					<h1>
-						Don’t lose the thread.
-						<span class="highlight">Joba Tea</span>
-						keeps every opportunity alive.
+			<main class="grid gap-3.5">
+				<div class="grid gap-3 mb-1.5">
+					<h1 class="m-0 font-['Fraunces'] text-[clamp(2.8rem,5vw,4.2rem)] leading-[1.04] tracking-[-0.02em]">
+						Never miss a follow-up.
 					</h1>
-					<p class="description">
+					<p class="m-0 max-w-[560px] text-[1.05rem] leading-[1.6] text-[rgba(17,24,39,0.7)]">
 						Organize every email, call, and follow‑up in one calm timeline. Get clear
 						recommendations on what to do next, plus study ideas tailored to each role so
 						you can move fast without losing track.
 					</p>
 				</div>
 				<!--
-				<div class="actions">
+				<div class="flex flex-wrap gap-2.5">
 					<a
-						class="btn primary"
+						class="inline-flex items-center justify-center rounded-[14px] border border-[rgba(17,24,39,0.14)] bg-gradient-to-br from-[rgba(246,198,232,0.95)] to-[rgba(191,230,255,0.95)] px-3.5 py-3 font-semibold"
 						href="mailto:hello@jobatea.com?subject=Joba%20Tea%20trial&body=I%20want%20to%20start%20a%20trial.%0A%0ATrack%3A%20%0A"
 					>
 						Start free trial
 					</a>
-					<a class="btn" href="/more">More</a>
+					<a
+						class="inline-flex items-center justify-center rounded-[14px] border border-[rgba(17,24,39,0.14)] bg-[rgba(255,255,255,0.8)] px-3.5 py-3 font-semibold"
+						href="/more"
+					>
+						More
+					</a>
 				</div>
-				<div class="meta">$5/month after trial</div>
+				<div class="text-[13px] text-[rgba(17,24,39,0.7)]">$5/month after trial</div>
 				-->
 			</main>
 		</div>
