@@ -19,7 +19,7 @@ import '../styles/global.css'
 		/>
 	</head>
 	<body
-		class="m-0 min-h-[100dvh] font-['Work_Sans'] text-[rgba(17,24,39,0.92)] flex items-center bg-[radial-gradient(900px_520px_at_10%_0%,rgba(246,198,232,0.35),transparent_60%),radial-gradient(900px_520px_at_90%_0%,rgba(191,230,255,0.4),transparent_60%),linear-gradient(180deg,#fdf8f1,#fbf4e8)] bg-no-repeat bg-[length:100%_100%]"
+		class="m-0 min-h-[100dvh] font-['Work_Sans'] text-[1.0625rem] text-[rgba(17,24,39,0.92)] flex items-center bg-[radial-gradient(900px_520px_at_10%_0%,rgba(246,198,232,0.35),transparent_60%),radial-gradient(900px_520px_at_90%_0%,rgba(191,230,255,0.4),transparent_60%),linear-gradient(180deg,#fdf8f1,#fbf4e8)] bg-no-repeat bg-[length:100%_100%]"
 	>
 		<div class="mx-auto w-full max-w-[720px] px-5 pt-7 pb-[72px]">
 			<header class="flex flex-wrap items-center justify-between gap-3 pt-2 pb-6">
@@ -30,50 +30,45 @@ import '../styles/global.css'
 					></div>
 					<div>Joba Tea</div>
 				</div>
-				<div
-					class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[rgba(17,24,39,0.12)] px-2.5 py-1.5 text-xs text-[rgba(17,24,39,0.7)] sm:w-auto"
-				>
-					No auto apply. No outreach.
-				</div>
 			</header>
 
 			<main class="grid gap-3.5">
 				<div class="grid gap-3 mb-1.5">
-					<h1 class="m-0 font-['Fraunces'] text-[clamp(2.8rem,5vw,4.2rem)] leading-[1.04] tracking-[-0.02em]">
-						Never miss a follow-up.
+					<h1 class="m-0 font-['Fraunces'] text-[clamp(3rem,5.2vw,4.4rem)] leading-[1.04] tracking-[-0.02em]">
+						Tame the chaos. Keep your job search moving.
 					</h1>
-					<p class="m-0 max-w-[560px] text-[1.05rem] leading-[1.6] text-[rgba(17,24,39,0.7)]">
-						Organize every email, call, and follow‑up in one timeline. Get clear
-						recommendations on what to do next, plus interview prep next steps (like
-						“prepare for system design”) so you can move fast without losing track.
+					<p class="m-0 max-w-[560px] text-[1.4rem] leading-[1.5] text-[rgba(17,24,39,0.7)]">
+						I built
+								<span
+									class="inline-flex items-center rounded-full border border-[rgba(17,24,39,0.09)] bg-gradient-to-r from-[rgba(246,198,232,0.45)] to-[rgba(191,230,255,0.45)] px-2.5 py-px font-normal text-[rgba(17,24,39,0.86)]"
+								>
+							Joba Tea
+						</span>
+						because I kept losing track of recruiter emails, LinkedIn messages,
+						and what to say during an interview. This keeps each opportunity organized and tells me what to do
+						next.
 					</p>
 				</div>
 
-				<ul
-					class="m-0 grid list-none gap-2 rounded-2xl border border-[rgba(17,24,39,0.10)] bg-[rgba(255,255,255,0.35)] p-4 text-sm text-[rgba(17,24,39,0.78)]"
-				>
-					<li class="flex gap-2">
-						<span class="mt-[0.4rem] h-2 w-2 shrink-0 rounded-full bg-[rgba(17,24,39,0.28)]"></span>
-						<span><span class="font-semibold">Thread-first timeline</span> for each job (emails → calls → interviews → follow-ups).</span>
-					</li>
-					<li class="flex gap-2">
-						<span class="mt-[0.4rem] h-2 w-2 shrink-0 rounded-full bg-[rgba(17,24,39,0.28)]"></span>
-						<span><span class="font-semibold">Explainable next steps</span> when things go stale (no “AI vibes,” just clear prompts).</span>
-					</li>
-					<li class="flex gap-2">
-						<span class="mt-[0.4rem] h-2 w-2 shrink-0 rounded-full bg-[rgba(17,24,39,0.28)]"></span>
-						<span><span class="font-semibold">Interview prep tasks</span> inferred from signals (invite text, stage, calendar) + your role.</span>
-					</li>
-				</ul>
+				<section class="grid gap-3 sm:grid-cols-3">
+					<div class="rounded-2xl border border-[rgba(17,24,39,0.10)] bg-[rgba(255,255,255,0.45)] p-4 text-[1.12rem] leading-[1.56] text-[rgba(17,24,39,0.8)]">
+                        Keep track of every interaction with recruiter messages, calls, and interview scheduling.
+					</div>
+					<div class="rounded-2xl border border-[rgba(17,24,39,0.10)] bg-[rgba(255,255,255,0.45)] p-4 text-[1.12rem] leading-[1.56] text-[rgba(17,24,39,0.8)]">
+						When a lead goes cold, you get a clear next step and follow-up timing.
+					</div>
+					<div class="rounded-2xl border border-[rgba(17,24,39,0.10)] bg-[rgba(255,255,255,0.45)] p-4 text-[1.12rem] leading-[1.56] text-[rgba(17,24,39,0.8)]">
+                        Get prep recommendations like LeetCode problems and system design practice.
+					</div>
+				</section>
 
-				<div class="flex flex-wrap items-center gap-2.5">
+				<div class="mt-3.5 flex flex-wrap items-center gap-2.5">
 					<a
-						class="inline-flex items-center justify-center rounded-[14px] border border-[rgba(17,24,39,0.14)] bg-gradient-to-br from-[rgba(246,198,232,0.95)] to-[rgba(191,230,255,0.95)] px-5 py-3 font-semibold"
-						href="mailto:hello@jobatea.com?subject=Joba%20Tea%20beta%20access&body=I%20want%20beta%20access%20to%20Joba%20Tea.%0A%0AWhat%20roles%20are%20you%20targeting%3F%20%0AWhat%20part%20of%20the%20process%20hurts%20most%3F%20"
+						class="inline-flex items-center justify-center rounded-[14px] border border-[rgba(17,24,39,0.14)] bg-gradient-to-br from-[rgba(246,198,232,0.95)] to-[rgba(191,230,255,0.95)] px-5 py-3 text-[1.05rem] font-semibold"
+						href="mailto:hello@jobatea.com?subject=Joba%20Tea%20free%20trial&body=I%27d%20like%20a%20free%20trial%20of%20Joba%20Tea.%0A%0AWhat%20roles%20are%20you%20applying%20to%3F%0AWhere%20are%20you%20getting%20stuck%3F"
 					>
-						Request beta access
+						Email me for a test run
 					</a>
-					<span class="text-[13px] text-[rgba(17,24,39,0.65)]">Sends me an email</span>
 				</div>
 			</main>
 		</div>
